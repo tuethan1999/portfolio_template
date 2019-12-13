@@ -1,0 +1,178 @@
+/* HEADINGS */
+.heading-main {
+	font-family: 'Vidaloka', serif;
+    font-size: 48px;
+}
+
+.elem-tray {
+	font-family: 'Vidaloka', serif;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.bio {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+#intro {
+    box-sizing: border-box;
+    height: 60vh;
+    min-height: 550px;
+    max-height: 1000px;
+    padding-top: 160px;
+}
+
+#contact-me {
+    padding-top: 20px;
+}
+
+.portfolio-elem-tray {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-elem-wrapper {
+    margin: 5px auto;
+    width: 32%;
+    max-width: 360px;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.portfolio-elem {
+    border-radius: 10px;
+    transition: all .15s ease-in-out; 
+}
+
+.portfolio-elem:hover { 
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 5px #ffffff;
+    transform: scale(1.03);
+}
+
+.portfolio-elem img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    vertical-align: top;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* PAGE STRUCTURE */
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+body .heading-main, .bio, .elem-tray{
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 5px 10px;
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited,
+a:focus {
+    text-decoration: none;
+    border-bottom: 1px solid #fbff00;
+    color: #ffffff;
+}
+
+.flex-grid {
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* MODAL */
+.modal-background {
+	display: none;
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.1);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 3% auto;
+    padding: 70px 70px;
+    top: 100px;
+    left: 50px;
+    right: 50px;
+    border: 1px solid #888888;
+    max-width: 700px;
+}
+
+.modal-content img {
+	max-width: 100%;
+  	height: auto;
+  	width: auto\9;
+  	padding-top: 60px;
+  	padding-bottom: 60px;
+}
+
+.project-date {
+    font-size: 15px;
+}
+
+.project-title {
+    font-size: 15px;
+}
+
+.project-paragraph {
+    padding-top: 20px;
+    text-align: left;
+}
+
+/* The Close Button */
+.close {
+    color: rgba(170, 170, 170, 0.356);
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+}
+  
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.fade-out {
+	animation: 1s ease-out 0s 1 fadeout;
+}
+
+.fade-in {
+	animation: 1s ease-in 0s 1 fadein;
+}
